@@ -1,37 +1,27 @@
-
-import React from 'react';
-import Navbar from './components/Navbar';
-// import Home from './components/Home';
-import Background from './components/Background';
-  // Import Location component
-import {
-  createBrowserRouter, RouterProvider,
-} from "react-router-dom";
-
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Background from "./components/Background";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 function App() {
-
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <><Navbar/><Home/></>,
-    },
-   
-  ]);
-
   return (
-    <>
-      <RouterProvider router={router}>
+    <BrowserRouter>
+      {/* Main wrapper to ensure the layout covers the entire screen */}
+      <div className="relative w-full h-screen bg-slate-800"> 
+        {/* Background component */}
+        <Background />  
+        
+        {/* Navbar component */}
+        <Navbar />  
+        
+        {/* Uncomment and import Foreground when ready */}
+        {/* <Foreground/> */}
+        <Home/>
 
-      <div className="relative w-full h-screen bg-zinc-800"> {/*To give Background color for all the components */}
-
-          <Background/>
-          <Navbar/>
-          {/* <Home/> */}
-        </div>
-      </RouterProvider>
-    </>
-  )
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
