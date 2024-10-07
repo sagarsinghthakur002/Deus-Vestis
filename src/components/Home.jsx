@@ -5,14 +5,26 @@ function Home() {
     <main className="relative w-full min-h-screen z-[3] flex justify-between items-center px-8">
       <div className="flex flex-col items-start">
         <h1 className="text-white text-[35px] font-semibol ml-[20px] mt-[75px]">
-          {/* Deus Vestis */}Welcome to Drip Realm.
+          {/* Deus Vestis */}Welcome to Drip Realm:
         </h1>
-        <p className="text-white -ml-[15px] -mb-[20px] text-[20px] md:pl-[5rem]">Genderless premium streetwear</p>
+        <p className="text-white -ml-[15px] -mb-[20px] text-[20px] md:pl-[5rem]">Streetwear Meets Boundless Style</p>
+        <p className="text-white ml-[25px] mt-[18px] -mb-[20px] text-[20px] md:pl-[5rem]">No Labels. Just You</p>
         <img className="h-[20em] ml-[50px]" src="/images/log.png" />
 
-        {/* <div className='h-3'>
-          <img src='/images/log.png'/>
-        </div> */}
+        
+
+          {/* add to card */}
+
+<div data-tooltip="Price:-$20" class="buttoon">
+<div class="buttoon-wrapper">
+  <div class="teext">Buy Now</div>
+    <span class="icoon">
+      <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+</svg>
+    </span>
+  </div>
+</div>
 
             {/* social-icon  */}
 
@@ -117,25 +129,18 @@ function Home() {
   </div>
 </div>
 
-            {/* button-buy and book */}
+            
 
-        <div className="ml-[80px] ">
-          <button className="bg-yellow-700 rounded-[10px] text-white p-2 button-0 mt-4 ">
-            Buy now
-          </button>
-          <button className="bg-yellow-700 rounded-[10px] text-white p-2 button-0 mt-4 ml-3">
-            Book Now
-          </button>
-        </div>
       </div>
 
       {/* Image Container */}
       <div className="relative">
         <img
-          className="w-full h-auto object-cover"
+          className="h-[40rem] ml-[10px] "
           src="/images/page.png"
           alt="Premium streetwear"
         />
+        <p className="text-white text-[20px] ml-[10rem]">Genderless premium streetwear </p>
       </div>
     </main>
   );

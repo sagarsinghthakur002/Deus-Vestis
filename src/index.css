@@ -108,3 +108,121 @@
 .socialcontainer:hover .social-icon-4 {
   transform: translateY(-70px);
 }
+
+        /* add to card button  */
+
+        /* From Uiverse.io by JaydipPrajapati1910 */ 
+.buttoon {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  margin-left: 8rem;
+  margin-top: -20px;
+}
+
+.buttoon::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.buttoon::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.buttoon::after,.buttoon::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.teext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttoon-wrapper,.teext,.icoon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.teext {
+  top: 0
+}
+
+.teext,.icoon {
+  transition: top 0.5s;
+}
+
+.icoon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icoon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.buttoon:hover {
+  background: #222;
+}
+
+.buttoon:hover .teext {
+  top: -100%;
+}
+
+.buttoon:hover .icoon {
+  top: 0;
+}
+
+.buttoon:hover:before,.buttoon:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttoon:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.buttoon:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+
+
