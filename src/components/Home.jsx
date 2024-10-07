@@ -1,3 +1,4 @@
+
 import React from "react";
 
 function Home() {
@@ -140,7 +141,7 @@ function Home() {
           src="/images/page.png"
           alt="Premium streetwear"
         />
-        <p className="text-white text-[20px] ml-[10rem]">Genderless premium streetwear </p>
+        <p className=" text-gray-700 text-[25px] ml-[8rem]">Genderless premium streetwear </p>
       </div>
     </main>
   );
