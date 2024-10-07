@@ -17,13 +17,13 @@ function Navbar() {
               <Link to="/" className="hover:text-red-500" aria-current="page">Home</Link>
             </li>
             <li>
-              <Link to="/Location" className="hover:text-red-500">Location</Link>
+              <Link to="/About" className="hover:text-red-500">About</Link>
             </li>
             <li>
               <Link to="/Contact" className="hover:text-red-500">Contact</Link>
             </li>
             <li>
-              <Link to="/About" className="hover:text-red-500">About</Link>
+              <Link to="/Location" className="hover:text-red-500">Location</Link>
             </li>
           </ul>
 
@@ -37,9 +37,11 @@ function Navbar() {
             </button>
           </div>
 
+          
+
           {/* Login Button */}
           <button 
-            className="px-5 py-3 bg-red-700 hover:bg-red-800 rounded-md text-white hidden md:block"
+            className="px-9 py-3 m-5 bg-red-700 hover:bg-red-800 rounded-md text-white  hidden md:block"
             aria-label="Login to your account"
           >
             Login

@@ -4,6 +4,7 @@ import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,10 +15,12 @@ function App() {
         
         {/* Navbar component */}
         <Navbar />  
+
         
         {/* Uncomment and import Foreground when ready */}
         {/* <Foreground/> */}
         <Home/>
+        
 
       </div>
     </BrowserRouter>

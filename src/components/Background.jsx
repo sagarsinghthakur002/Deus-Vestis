@@ -11,7 +11,7 @@ function Background() {
 
         {/* Centered large heading text with text-shadow */}
         <h1 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[13vw] md:text-[9vw] sm:text-[6vw] leading-none tracking-tighter font-semibold text-white"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[13vw] md:text-[9vw] sm:text-[6vw] leading-none tracking-tighter font-semibold text-gray-700"
           style={{ textShadow: '2px 4px 6px rgba(0, 0, 0, 0.8)' }}
         >
           Deus Vestis
